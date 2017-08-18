@@ -1,0 +1,64 @@
+.main-form{
+  width: 100%;
+  padding: 20px;
+  border: 1px #666 dashed;
+  min-height: 30vh;
+  color: #333;
+  font-size: 1.2rem;
+  display: inline-block;
+
+  @media screen and (min-width: $breakpointDesktop){
+    width: 70%;
+    margin: 0 15%;
+  }
+  &__input-container{
+    width: 100%;
+    float: left;
+    padding: 0px;
+    margin-bottom: 15px;
+    &--singleline{
+      @media screen and (min-width: $breakpointDesktop){
+        padding: 0px 10px;
+      }
+    }
+    &--multiline{
+
+    }
+  }
+  %pullLeft{
+    display: inline-block;
+    float: left;
+  }
+  &__label{
+    width: 100%;
+    font-size: .8em;
+    margin-bottom: 5px;
+    @extend %pullLeft;
+  }
+  &__input{
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 15px;
+    border: 1px #666 dashed;
+    @extend %pullLeft;
+    &--singleline{
+
+    }
+    &--multiline{
+
+    }
+  }
+  &__send{
+    font-size: 1em;
+    background: #000;
+    padding: 10px 15px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    border: none;
+    @media screen and (min-width: $breakpointDesktop){
+      max-width: 200px;
+      float: right;
+    }
+  }
+}

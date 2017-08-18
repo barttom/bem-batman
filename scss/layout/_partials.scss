@@ -1,0 +1,60 @@
+.content{
+  padding-top: 20px;
+  background: #333;
+  color: #eee;
+  line-height: 1.66;
+  font-size: 1rem;
+  min-height: 30vh;
+  border-bottom: 1px $colorYellow solid;
+  border-top: 1px $colorYellow solid;
+  @media screen and (orientation:landscape){
+    padding: 50px 0;
+    min-height: 50vh;
+  }
+
+  img{
+    margin-bottom: 15px;
+    margin-right: 15px;
+    border-radius: 50%;
+    max-width: 25%;
+    float: left;
+    border: 2px $colorYellow solid;
+  }
+  p{
+    margin-bottom: 10px;
+
+
+  }
+}
+.contact{
+  background: darken(#efe001, 10%);
+  padding: 20px 0;
+}
+.main-header{
+  height: 50vh;
+  width: 100%;
+  background: url(../img/banner.jpg) no-repeat top center;
+  background-size: cover;
+  position: relative;
+  @media screen and (orientation:landscape){
+    height: 100vh;
+  }
+
+  &__title{
+    color: rgba(255,255,255,.5);
+    position: absolute;
+    width: 100%;
+    font-size: 7vw;
+    left: 0;
+    bottom: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    text-shadow: 2px 2px #333;
+  }
+}
+.main-footer{
+  background: $colorBlack;
+  color: $colorWhite;
+  padding: 15px 0;
+  border-top: 3px $colorYellow solid;
+}
